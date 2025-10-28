@@ -1,0 +1,148 @@
+<!Doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eirlys Bakery</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-bar">
+      <div class="logo-area">
+        <img src="assets/eirlys-logo.png" alt="Eirlys logo" class="logo-image">
+      </div>
+      <ul class="menu-list">
+        <li><a href="#home" class="active-link">Trang chủ</a></li>
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#featured">Nổi bật</a></li>
+        <li><a href="#catalog">Danh mục</a></li>
+        <li><a href="#order">Đặt hàng</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Tìm bánh, vị, nguyên liệu..." class="search-input">
+        <button class="search-button">Tìm</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-title">Eirlys — Sweet moments, crafted with love</div>
+        <div class="hero-subtitle">
+          Bánh tươi hàng ngày, hương vị tinh tế. Khám phá bộ sưu tập bánh kem, cupcake, tart và bánh mặn.
+        </div>
+        <a href="#catalog" class="main-button">Khám phá ngay</a>
+      </div>
+      <div class="hero-image">
+        <svg viewBox="0 0 300 300" class="hero-cupcake" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="cupcake">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="#fff0e6"/>
+              <stop offset="1" stop-color="#ffe7d1"/>
+            </linearGradient>
+          </defs>
+          <g transform="translate(30,20)" stroke="#7a4a3a" fill="none" stroke-width="4">
+            <path d="M20 160 h220 a10 10 0 0 0 10 -10 v-20 H10 v20 a10 10 0 0 0 10 10z" fill="url(#g1)" stroke="#7a4a3a"/>
+            <path d="M50 140 q30 -70 100 -70 t100 70" fill="#fef5ee" stroke="#7a4a3a"/>
+            <path d="M70 90 q40 -40 80 0" stroke="#b57a6b" stroke-width="6" fill="none"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-title">Eirlys — nơi hội tụ những khoảnh khắc ngọt ngào</div>
+      <div class="about-text">
+        Sinh ra từ tình yêu với bánh và hương vị tinh tế, Eirlys cam kết sử dụng nguyên liệu tươi ngon, công thức sáng tạo và bàn tay khéo léo để mang đến những sản phẩm vừa đẹp mắt vừa ngon miệng.
+      </div>
+    </div>
+  </section>
+
+  <section id="featured" class="featured-section">
+    <div class="featured-container">
+      <div class="featured-title">Sản phẩm nổi bật</div>
+      <div class="product-list">
+        <div class="product-card">
+          <div class="product-image ph1"></div>
+          <div class="product-info">
+            <h3>Red Velvet Cupcake</h3>
+            <p class="product-price">₫85,000</p>
+            <a href="success.html" class="product-button">Đặt hàng</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image ph2"></div>
+          <div class="product-info">
+            <h3>Classic Vanilla Cake</h3>
+            <p class="product-price">₫550,000</p>
+            <a href="success.html" class="product-button">Đặt hàng</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image ph3"></div>
+          <div class="product-info">
+            <h3>Matcha Tart</h3>
+            <p class="product-price">₫95,000</p>
+            <a href="success.html" class="product-button">Đặt hàng</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalog" class="catalog-section">
+    <div class="catalog-title">Danh mục bánh</div>
+    <div class="catalog-grid">
+      <div class="catalog-card"><div class="product-image ph1"></div><div class="catalog-button"><a href="#order">Đặt hàng</a></div></div>
+      <div class="catalog-card"><div class="product-image ph2"></div><div class="catalog-button"><a href="#order">Đặt hàng</a></div></div>
+      <div class="catalog-card"><div class="product-image ph3"></div><div class="catalog-button"><a href="#order">Đặt hàng</a></div></div>
+      <div class="catalog-card"><div class="product-image ph4"></div><div class="catalog-button"><a href="#order">Đặt hàng</a></div></div>
+      <div class="catalog-card"><div class="product-image ph5"></div><div class="catalog-button"><a href="#order">Đặt hàng</a></div></div>
+      <div class="catalog-card"><div class="product-image ph6"></div><div class="catalog-button"><a href="#order">Đặt hàng</a></div></div>
+    </div>
+  </section>
+
+  <section id="order" class="order-section">
+    <div class="order-title">Đặt hàng nhanh</div>
+    <form class="order-form" action="success.html" method="get">
+      <label class="form-group">Tên của bạn<input class="form-input" type="text" placeholder="Nguyễn Văn A" required></label>
+      <label class="form-group">Sản phẩm<input class="form-input" type="text" placeholder="Red Velvet Cupcake" required></label>
+      <label class="form-group">Số lượng<input class="form-input" type="number" value="1" min="1"></label>
+      <div class="form-action">
+        <button type="submit" class="submit-button">Đặt hàng</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="feedback" class="feedback-section">
+    <div class="feedback-title">Phản hồi từ khách hàng</div>
+    <div class="feedback-item">
+      <img src="assets/avatar1.jpg" alt="khách hàng" class="feedback-image">
+      <div class="feedback-text">"Bánh ngon, trang trí đẹp — mình sẽ đặt lần nữa!" — Lan</div>
+    </div>
+  </section>
+
+  <footer id="contact" class="site-footer">
+    <div class="footer-container">
+      <div>
+        <div class="footer-heading">Eirlys Bakery</div>
+        <div class="footer-text">Địa chỉ: 12 Nguyễn Văn Bảo, TP. HCM</div>
+        <div class="footer-text">Giờ mở cửa: 7:00 - 20:00</div>
+      </div>
+      <div>
+        <div class="footer-heading">Liên hệ</div>
+        <div class="footer-text">Email: hello@eirlys.example</div>
+        <div class="footer-text">Hotline: 0793279827</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
