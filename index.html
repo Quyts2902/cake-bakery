@@ -1,8 +1,8 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Eirlys Bakery</title>
   <link href="style.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,7 +66,7 @@
           <div class="product-info">
             <h3>Red Velvet Cupcake</h3>
             <p class="price">₫30,000</p>
-            <a href="success.html" class="order">Đặt hàng</a>
+            <a href="#order" class="order">Đặt hàng</a>
           </div>
         </div>
 
@@ -75,7 +75,7 @@
           <div class="product-info">
             <h3>Classic Vanilla Cake</h3>
             <p class="price">₫300,000</p>
-            <a href="success.html" class="order">Đặt hàng</a>
+            <a href="#order" class="order">Đặt hàng</a>
           </div>
         </div>
 
@@ -84,7 +84,7 @@
           <div class="product-info">
             <h3>Matcha Tart</h3>
             <p class="price">₫20,000</p>
-            <a href="success.html" class="order">Đặt hàng</a>
+            <a href="#order" class="order">Đặt hàng</a>
           </div>
         </div>
       </div>
@@ -99,7 +99,7 @@
       <div class="product-info">
         <h3>Chocolate Mousse Cake</h3>
         <p class="price">₫250,000</p>
-        <a href="success.html" class="order">Đặt hàng</a>
+        <a href="#order" class="order">Đặt hàng</a>
       </div>
     </div>
 
@@ -108,7 +108,7 @@
       <div class="product-info">
         <h3>Blueberry Cheesecake</h3>
         <p class="price">₫280,000</p>
-        <a href="success.html" class="order">Đặt hàng</a>
+        <a href="#order" class="order">Đặt hàng</a>
       </div>
     </div>
 
@@ -117,7 +117,7 @@
       <div class="product-info">
         <h3>Caramel Pudding</h3>
         <p class="price">₫35,000</p>
-        <a href="success.html" class="order">Đặt hàng</a>
+        <a href="#order" class="order">Đặt hàng</a>
       </div>
     </div>
 
@@ -126,7 +126,7 @@
       <div class="product-info">
         <h3>Strawberry Cupcake</h3>
         <p class="price">₫30,000</p>
-        <a href="success.html" class="order">Đặt hàng</a>
+        <a href="#order" class="order">Đặt hàng</a>
       </div>
     </div>
 
@@ -135,7 +135,7 @@
       <div class="product-info">
         <h3>Matcha Roll Cake</h3>
         <p class="price">₫20,000</p>
-        <a href="success.html" class="order">Đặt hàng</a>
+        <a href="#order" class="order">Đặt hàng</a>
       </div>
     </div>
 
@@ -144,7 +144,7 @@
       <div class="product-info">
         <h3>Tiramisu Slice</h3>
         <p class="price">₫45,000</p>
-        <a href="success.html" class="order">Đặt hàng</a>
+        <a href="#order" class="order">Đặt hàng</a>
       </div>
     </div>
   </div>
@@ -154,8 +154,21 @@
     <div class="text-section5">Đặt hàng nhanh</div>
     <form class="box-form" action="success.html" method="get">
       <label class="form-item">Tên của bạn<input class="text-box-form" type="text" placeholder="Nguyễn Văn A" required></label>
+      <label class="form-item">Số diện thoại<input class="text-box-form" type="tel" pattern="[0-9]{10,11}" placeholder="0123456789" required></label>
       <label class="form-item">Sản phẩm<input class="text-box-form" type="text" placeholder="Red Velvet Cupcake" required></label>
       <label class="form-item">Số lượng<input class="text-box-form" type="number" value="1" min="1"></label>
+      <label class="form-item">Địa chỉ<input class="text-box-form" type="text" placeholder="12 Nguyễn Văn Bảo" required></label>
+      <label class="form-item">Thời gian cần nhận hàng<input class="text-box-form" type="datetime-local" required></label>
+      <label class="form-item">
+          Hình thức nhận hàng
+            <select class="text-box-form" required>
+              <option value="">--Chọn hình thức--</option>
+              <option value="delivery">Giao tận nơi</option>
+              <option value="pickup">Đến lấy tại tiệm</option>
+            </select>
+      </label>
+      <label class="form-item">Ghi chú đơn hàng<textarea class="text-box-form" rows="3" placeholder="Ví dụ: thêm nến sinh nhật, ít ngọt hơn..."></textarea></label>
+
       <div class="button-send">
         <button type="submit" class="btn-send">Đặt hàng</button>
       </div>
@@ -180,7 +193,7 @@
       <div>
         <div class="title-text">Liên hệ</div>
         <div class="main-text">Email: hello@eirlys.example</div>
-        <div class="main-text">Hotline: 0793279827</div>
+        <div class="main-text">Hotline: 0123456789</div>
       </div>
     </div>
   </footer>

@@ -587,7 +587,7 @@ body {
   }
 
   .image-gradient {
-    background: linear-gradient(to top, rgba(255, 247, 239, 0.95), rgba(255, 247, 239, 0));
+    display: none;
   }
   .navagation {
     flex-wrap: wrap;
@@ -638,6 +638,9 @@ body {
   .feedback-img {
     width: 55px;
     height: 55px;
+  }
+  .image-gradient{
+    display: none;
   }
 }
 
